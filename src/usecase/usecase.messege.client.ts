@@ -12,17 +12,21 @@ export class UsecaseMessegeClient {
     async create(data:IMessegeClient){
 
         const dataMessegeSchema = z.object({
-            name: z.string().min(4),
-            email: z.string(),
-            messege: z.string(),
+            input_name: z.string().min(4),
+            input_email: z.string(),
+            input_messege: z.string(),
         });
-
 
         const _data = dataMessegeSchema.parse(data);
 
-        const resultRepositorie = await this.repositorie.create(_data);
+        const _data_zod_refatory = {
+            name: _data.input_name,
+            email: _data.input_email,
+            messege: _data.input_messege,
+        };
 
-        const {name, email} = _data;
+        const resultRepositorie = await this.repositorie.create(_data_zod_refatory);
+
 
         return resultRepositorie;
     };

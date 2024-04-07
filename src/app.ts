@@ -18,8 +18,8 @@ export class App {
 
     register(){
         this.app.register(cors, {
-            origin: true,
-            methods: ['GET', 'POST']
+            origin: "*",
+            methods: ['POST']
         })
         this.app.register(CreteEvents);
         this.app.register(GetMesseges);

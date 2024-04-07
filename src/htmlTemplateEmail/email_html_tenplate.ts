@@ -1,4 +1,4 @@
-export function html_email (to:string) {
+export function html_email (name:string) {
     return `<!DOCTYPE html>
     <html lang="pt-br">
     <head>
@@ -9,14 +9,14 @@ export function html_email (to:string) {
         <header class="header_emaiil">
             <img src="https://lh3.googleusercontent.com/pw/AP1GczMrQZSCJNXjlI7IK5M198IYP2NKXtoIOy_NnSeNQFdoKqjAZfJoJ4Kyrlh6I2ch7QgLRLmlKQSpcrA7oQ0mXrOLXFN9at0Cz_rGkKLZ_EQDG3lzZlbN8A3nbrwA42pkPXlDM0MtzYn9Cmx9WKFt2lFPKP622k847nLOv-FOilt1Qb5iv_yqNqk1hHlwYBdnBl2ZlKfX2ashflWjOSAWoXrVzobLE3RjmJz-gMN0dwuf4UMQamoacKQbMWH4bM3-BSmaGnTPS14jtu4aPIp6oy3JiRGENan0VDO6WVPmBW0y3RY3iu2rbFkrkwWachz5o6AwaIERMNQiPrmPCbPkzAcsOsOEPgyoPyARZP4ukD3XkUj1Aoa9-kmxoQVOI6mzfEk_355csH3Yg_I6P5XWMImTwIZqdTwYZ0lk7r5eIbvSVZP-8t5s0tqboyodCJjMtMCj8IP7MnydwpDMjO4HJBZtq-7WScxGD1-10xNL15EzO4D5ZKZo1HE6QGoBmM_3XbifxTzZBxRzLMOI1O_orpexS7RRm-uO5JKSBBDwN8vU3KGuToEWmMRmqVCOxK5rAeszkkkmr1rAswoePr97oQYucI-jrXTp1DuUGp74DW-RUsV2MLF6bKEOMLWNMtC5kCoU4iqnOp_mC0eF6TubBM1NQATjZvqL-hSj6JPHL1FZ5DBVaJwPIPndnoWmIUO0CqiBbRIB3A_34RYiMKuF-lstYkxwup0GaOo6C4yfSRzhqmkm7hEFvkaZZzHcMfNWR_zDkUL5r-ExiSb9o_chHPq3zA3pY4FH4FLqEGYk9blto0YeGB3Aiel_l7UoRClQQZAh6TTm455zJyt9gEKFaTkmIR9Gwerivu0jfP5QCV-TeULj5anWp8_PTbXw3ErE4PymIBv6Z7XtIA1IvBhPGEgQXJAp8QJ6s7HHcoRmm0Nt0d_zhxaOegLqOP_HwiDMi_MO7lV0udxPCC2sF5i6XSwQRCg8HMcD=w222-h44-s-no-gm?authuser=1" alt="logo da empresa">
         </header>
-        <h1>Obrigrado pelo seu contato</h1>
+        <h1>Obrigado pelo seu contato</h1>
         <p>
-            Olá ${to}, aquí é o Cláudio. Este é um email de resposta
-            ao seu contato em minha pagina pessoal.
+            Olá, ${name}, aquí é o Cláudio. Este é um email, gerado automaticamente, em resposta
+            ao seu contato em minha página Cláudio Soares FullStack.
         </p>
         <p>
             Estou analizando sua menssagem e entrarei em contato, em até 
-            48 horas, no email que você deixou para contato no formulário no site.
+            48 horas, no email que você deixou para contato no formulário do site.
         </p>
         <p>
             Espero que possamos fazer uma boa parceria. &#128077;

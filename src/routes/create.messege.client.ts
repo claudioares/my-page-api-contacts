@@ -22,11 +22,11 @@ export async function CreteEvents (app: FastifyInstance) {
             const resultUseCase = await usecase.create(data);
 
             const {
-                email
+                email, name
             } = resultUseCase as IResultCaseType
 
 
-            const sendResult = sendNodeMailer(email);
+            const sendResult = sendNodeMailer(email, name);
 
             return reply.status(201).send({data:{resultUseCase}, email:sendResult});
             

@@ -11,13 +11,13 @@ const transport = nodemailer.createTransport({
     }
 });
 
-export const sendNodeMailer = (to:string) => {
+export const sendNodeMailer = (to:string, name:string) => {
 
     transport.sendMail({
         from: process.env.MAIL_FROM,
         to,
         subject: `Email resposta de Claudio Soares`,
-        html:html_email(to)
+        html:html_email(name)
     });
 
     return "Email successfully sent!"
