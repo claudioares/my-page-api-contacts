@@ -4,7 +4,6 @@ import { IMessegeClient, IMethodsOfMesseges } from "../interfaces/interfaces";
 export class RepositorieMesseges implements IMethodsOfMesseges {
     async create(data: IMessegeClient): Promise<IMessegeClient> {
 
-
         const resultDataBase = await prisma.connectionClients.create({
             data:{
                 name:data.name,
@@ -12,7 +11,7 @@ export class RepositorieMesseges implements IMethodsOfMesseges {
                 messege:data.messege,
             }
         });
-
+        
         return resultDataBase;
     };
     async getMesseges(): Promise<IMessegeClient | null> {

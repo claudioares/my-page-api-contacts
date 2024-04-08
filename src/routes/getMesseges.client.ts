@@ -13,7 +13,7 @@ export async function GetMesseges (app: FastifyInstance) {
             return reply.status(201).send({data:resultUseCase});
             
         } catch (error) {
-            console.error('Error during event create:', error);
+            console.error('Error during event:', error);
             reply.status(500).send({ error: "Error during creation!" });
         }
     })
