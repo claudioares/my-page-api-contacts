@@ -3,6 +3,7 @@ import { CreteEvents } from "./routes/create.messege.client";
 import { GetMesseges } from "./routes/getMesseges.client";
 import { getMessegeId } from "./routes/getMessege.client.id";
 import cors from "@fastify/cors";
+import { delMessegeId } from "./routes/del.messege.client";
 
 
 export class App {
@@ -27,5 +28,6 @@ export class App {
         this.app.register(CreteEvents);
         this.app.register(GetMesseges);
         this.app.register(getMessegeId);
+        this.app.register(delMessegeId);
     }
 }
