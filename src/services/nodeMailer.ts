@@ -7,15 +7,15 @@ const transport = nodemailer.createTransport({
     port:  587,
     secure: false,
     auth: {
-        user: process.env.MAIL_USER,
-        pass: '@Connectividade1103#'
+        user: 'claudioasoares@outlook.com',
+        pass: '@Legionario1103#'
     }
 });
 
 export const sendNodeMailer = (to:string, name:string) => {
 
     transport.sendMail({
-        from: process.env.MAIL_FROM,
+        from: 'claudioasoares@outlook.com',
         to,
         subject: `Email resposta de Claudio Soares`,
         html:html_email(name)
