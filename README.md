@@ -1,6 +1,6 @@
 # my-page-API-contacts - API de Contatos
 
-Esta é a API de Contatos que criei para armazenar mensagens de usuários da minha página pessoal. A API utiliza tecnologias como Prisma, MongoDB, Node.js, TypeScript, Fastify, Zod e Nodemailer.
+Esta é a API de Contatos que criei para armazenar mensagens de usuários da minha página pessoal. A API utiliza tecnologias como Prisma, MongoDB, Node.js, TypeScript, Fastify, Zod.
 
 ## Funcionalidades
 
